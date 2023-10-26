@@ -311,13 +311,13 @@ img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
 
-.skills__icon {
+/* .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
-}
+} */
 
-.skills__names {
+/* .skills__names {
   display: flex;
   align-items: center;
 }
@@ -350,11 +350,12 @@ img {
 
 .skills__img {
   border-radius: .5rem;
-}
+} */
 
 .skill_icon {
   display: flex;
   flex-direction: row;
+  padding: 2;
 }
 
 .skill1-icon {
