@@ -8,8 +8,8 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
-  --first-color: #4B4B4C; /*hsl(var(--hue-color), 89%, 60%)*/
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --first-color: #7E8E8F ; /*hsl(var(--hue-color), 89%, 60%)*/
+  --second-color: #EDE7E3   ; 
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -49,7 +49,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  background-color: #8D9AA6;
+  background-color: #2E4057;
 }
 
 h1, h2, p {
@@ -113,7 +113,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #5A6371;
+  background-color: #95A5A6 ;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -124,7 +124,7 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
-  background-color: #5A6371;
+  background-color: #95A5A6  ;
 }
 
 @media screen and (max-width: 767px) {
@@ -289,6 +289,7 @@ img {
 .skills__container {
   row-gap: 2rem;
   text-align: center;
+  display: flex;
 }
 
 .skills__subtitle {
@@ -311,13 +312,17 @@ img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
 
-/* .skills__icon {
+.skills_cont{
+  flex-direction: column;
+}
+
+.skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
-} */
+}
 
-/* .skills__names {
+.skills__names {
   display: flex;
   align-items: center;
 }
@@ -331,44 +336,35 @@ img {
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-
-.skills__html {
-  width: 95%;
+.skills__name {
+  margin-left: 4rem;
+}
+.skill_desc {
+  margin-left: 2rem;
+  font-weight: 300;
 }
 
-.skills__css {
-  width: 85%;
-}
-
-.skills__js {
-  width: 65%;
-}
-
-.skills__ux {
-  width: 85%;
-}
-
-.skills__img {
-  border-radius: .5rem;
-} */
-
-.skill_icon {
-  display: flex;
+/* .skills-icon {
+  display: block;
   flex-direction: row;
-  padding: 2;
+  row-gap: 3rem;
+}
+
+.skill-container {
+  display: block;
+  flex-direction: row;
+  row-gap: 3rem;
 }
 
 .skill1-icon {
   margin-bottom: var(--mb-2);
-  height: 5cm;
-  width: 5cm;
-  size: 10cm;
+  margin-right: var(--mb-6);
   color: var(--second-color);
 }
 
 .skill1-icon:hover {
   color: var(--first-color);
-}
+} */
 
 
 
@@ -414,7 +410,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: #1F2B3B;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);

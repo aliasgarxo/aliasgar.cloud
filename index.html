@@ -50,7 +50,7 @@
 
                 <div class="home__social">
                     <a href="https://www.linkedin.com/in/aliasgar-husain-7a3510158" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="aliasgar.xo@gmail.com" class="home__social-icon"><i class='bx bxs-envelope' ></i></a>
+                    <a href="mailto:aliasgar.xo@gmail.com" class="home__social-icon"><i class='bx bxs-envelope' ></i></a>
                     <a href="https://github.com/aliasgarxo" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                 </div>
 
@@ -80,7 +80,7 @@
                         <h2 class="about__subtitle">I'am Aliasgar</h2>
                         <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
                         
-                        <a href="#" class="button12">Download Resume</a>           
+                        <a href="#" class="button12" onclick = "downloadFile()">Download Resume</a>           
                     </div>                                   
                 </div>
             </section>
@@ -93,65 +93,68 @@
                     <div>
                         <h2 class="skills__subtitle">Profesional Skills</h2>
                         <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        
-                        <div class="skill_icon">
+                        <!-- <div class="skills-icon">
+                            <div class="skill-container">
+                                <a href="" class="skill1-icon"><i class="fa-brands fa-aws fa-bounce fa-10x" style="color: #4B4B4C; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i></br></a>
+                                <h1>AWS services</h1>
+                                <p>This is a despription for aws services.</p>
+                            </div>
+                            
+                            <div class="skill-container">
+                                <a href="" class="skill1-icon"><i class="fa-brands fa-aws fa-bounce fa-10x" style="color: #4B4B4C; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i></br></a>
+                                <h1>AWS services</h1>
+                                <p>This is a despription for aws services.</p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="skill_icon">
                             <a href="" class="skill1-icon"><i class="fa-brands fa-aws fa-bounce fa-10x" style="color: #4B4B4C; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i></br></a>
                             <a href="" class="skill1-icon"><i class="fa-brands fa-docker fa-bounce fa-10x" style="color: #4B4B4C; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i></a>
                             <a href="" class="skill1-icon"><i class="fa-brands fa-jenkins fa-bounce fa-10x" style="color: #4B4B4C; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i></a>
                             <a href="" class="skill1-icon"><i class="fa-brands fa-github fa-bounce fa-10x" style="color: #4B4B4C; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i></a>
-                            <a href="" class="skill1-icon"><i class="fa-brands fa-python fa-bounce fa-10x" style="color: #4B4B4C; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i></a>
-                        </div>
-                        
-
-                        
-                        <!-- <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
+                            <a href="" class="skill1-icon"><i class="fa-brands fa-python fa-bounce fa-10x" style="color: #4B4B4C; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i>Hello</a>
                         </div> -->
+                        
+
+                        <div class="skills_cont">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class="fa-brands fa-aws fa-flip fa-10x" style="color: #95A5A6; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i>
+                                    <span class="skills__name">AWS SERVICES</span>
+                                    <p class="skill_desc">Hello this is content for aws services</p>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class="fa-brands fa-docker fa-flip fa-10x" style="color: #95A5A6; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i>
+                                    <span class="skills__name">DOCKER</span>
+                                    <p class="skill_desc">Hello this is content for aws services</p>
+                                </div>
+                                
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class="fa-brands fa-jenkins fa-flip fa-10x" style="color: #95A5A6; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i>
+                                    <span class="skills__name">JENKINS</span>
+                                    <p class="skill_desc">Hello this is content for aws services</p>
+                                </div>
+                                
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class="fa-brands fa-github fa-flip fa-10x" style="color: #95A5A6; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i>
+                                    <span class="skills__name">GITHUB</span>
+                                    <p class="skill_desc">Hello this is content for aws services</p>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class="fa-brands fa-python fa-flip fa-10x" style="color: #95A5A6; --fa-animation-duration: 3s; --fa-animation-iteration-count: 1;"></i>
+                                    <span class="skills__name">PYTHON</span>
+                                    <p class="skill_desc">Hello this is content for aws services</p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                     
                     <!-- <div>              
@@ -209,7 +212,7 @@
                 <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+            <p class="footer__copy">&#169; Dellhoak. All rigths reserved</p>
         </footer>
 
 
@@ -237,6 +240,13 @@
                     // Handle error
                 }
             });
+        </script>
+
+        <!--script for download resume-->
+        <script>
+            function downloadFile() {
+               window.open("assets/AliasgarHusain_CV.pdf")
+            }
         </script>
 
         <script src="https://kit.fontawesome.com/856d3a142e.js" crossorigin="anonymous"></script>
