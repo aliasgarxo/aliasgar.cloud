@@ -54,3 +54,36 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+/* this is for contact form  */
+
+document.getElementById('contact__form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value
+    };
+  
+    fetch('http://your-backend-server-ip:backend-port/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      // Handle success response if needed
+      console.log('Data sent successfully');
+    })
+    .catch(error => {
+      // Handle error
+      console.error('There was a problem with the fetch operation:', error);
+    });
+  });
+  

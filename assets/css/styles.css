@@ -164,6 +164,7 @@ img {
 }
 
 .nav__logo {
+  font-size: 1.8rem;
   color: var(--second-color);
 }
 
