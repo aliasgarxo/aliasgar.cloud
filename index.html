@@ -151,9 +151,6 @@
                         
                     </div>
                     
-                    <!-- <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div> -->
                 </div>
             </section>
 
@@ -162,23 +159,23 @@
                 <h2 class="section-title">Projects</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                    <a href="https://github.com/aliasgarxo/JenkinsDocker_pipeline" class="work__img">
+                        <img src="assets/img/Jenkins-DockerCICD.png" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
+                        <img src="assets/img/Jenkins-KubeCICD.png" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
+                        <img src="assets/img/terraarch.png" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
+                        <img src="assets/img/Docker-3-tier.png" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
+                        <img src="assets/img/Jenkins-DockerCICD.png" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
+                        <img src="assets/img/Jenkins-DockerCICD.png" alt="">
                     </a>
                 </div>
             </section>
@@ -188,11 +185,11 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="http://3.109.183.230:3000/contact" method="POST" class="contact__form">
+                    <form action="https://formspree.io/f/xpzvqvyr" method="POST" class="contact__form">
                         <input type="text" name="name" id="name" placeholder="Name" class="contact__input">
                         <input type="mail" name="email" id="email" placeholder="Email" class="contact__input">
                         <textarea name="message" placeholder="Message" id="message" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" id="submit" type="submit" value="Submit" class="contact__button button">
+                        <button type="submit" id="submit" class="contact__button button">Submit</button>
                     </form>
                 </div>
             </section>
@@ -215,26 +212,6 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
-
-        <script>
-            document.getElementById('contact-form').addEventListener('submit', async (e) => {
-                e.preventDefault();
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const message = document.getElementById('message').value;
-        
-                const response = await fetch('YOUR_API_GATEWAY_URL', {
-                    method: 'POST',
-                    body: JSON.stringify({ name, email, message }),
-                });
-        
-                if (response.status === 200) {
-                    // Handle success
-                } else {
-                    // Handle error
-                }
-            });
-        </script>
 
         <!--script for download resume-->
         <script>
