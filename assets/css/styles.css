@@ -453,6 +453,41 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .home {
+    row-gap: 2rem;
+  }
+  .home__img {
+    width: 200px;
+  }
+  .skills__container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; 
+  }
+  
+  .skills__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;  
+  }
+  
+  .skills__names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skills__name {
+    margin-top: 10px; 
+  }
+  
+  .skill_desc {
+     word-break: break-word; 
+  }
+}
+
 @media screen and (min-width: 576px) {
   .home {
     padding: 4rem 0 2rem;
