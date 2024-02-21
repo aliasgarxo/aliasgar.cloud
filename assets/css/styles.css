@@ -469,8 +469,7 @@ img {
   .skills__data {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    text-align: center;  
+    align-items: center;   
   }
   
   .skills__names {
@@ -480,11 +479,19 @@ img {
   }
   
   .skills__name {
-    margin-top: 10px; 
+    margin-top: 10px;
+    display: flex;
+    padding-top: 0.4cm;
+    align-items: center;
+    margin-left: 0rem;
   }
   
   .skill_desc {
-     word-break: break-word; 
+    word-break: break-word;
+    display: flex;
+    padding-top: 0.5cm;
+    align-items: center;
+    margin-left: 0rem;
   }
 }
 
