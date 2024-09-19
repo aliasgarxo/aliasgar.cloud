@@ -101,7 +101,7 @@ img {
 
 /*===== LAYOUT =====*/
 .bd-grid {
-  max-width: 1024px;
+  max-width: 1120px;
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -373,7 +373,7 @@ img {
 
 /* ===== WORK =====*/
 .work__container {
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 .work__img {
